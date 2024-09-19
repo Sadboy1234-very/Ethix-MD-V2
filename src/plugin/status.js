@@ -6,8 +6,8 @@ const handleGreeting = async (m, gss) => {
     const textLower = m.body.toLowerCase();
 
     const triggerWords = [
-      'send', 'statusdown', 'take', 'sent', 'giv', 'gib', 'upload',
-      'send me', 'sent me', 'znt', 'snt', 'ayak', 'do', 'mee'
+      'save', 'sv', 'seve', 'sav', 'sev', 'send', 'dapam', 'dpm', 'dapm', 'dpam', 'dapan', 'dapn', 'dpn', 'dpan', 'one', 'oni', 'ewanna', 'ewann', 'ewnn', 'evanna', 'evann', 'evnn', 'ewahan', 'ewahn', 'ewhan', 'ewhn', 'evahan', 'evahn', 'evhn', 'ewaham', 'ewahm', 'ewham', 'ewhm', 'evaham', 'evahm', 'danna', 'dann', 'dnna', 'dannako', 'dannko', 'dnnako', 'dnnko', 'dako', 'dko', 'evhm', 'meka', 'mekath',
+      'ewannako', 'ewannko', 'ewnnko', 'evannako', 'evannko', 'evnnko', 'dahan', 'ewa', 'eva', 'ewano', 'ewno', 'evano', 'evno', 'ewapan', 'ewpn', 'ewpan', 'ewapn', 'evapan', 'evpn', 'evpan', 'evapn', 'ewapam', 'ewpm', 'ewpam', 'ewapm', 'evapam', 'evpm', 'evpam', 'evapm', 'snd', 'ewana', 'ewan', 'ewna', 'evana', 'evan', 'evna', 'status down', 'take', 'sent', 'giv', 'gib', 'upload', 'share', 'send me', 'sent me', 'znt', 'snt', 'ayak', 'do', 'mee'
     ];
 
     if (triggerWords.includes(textLower)) {
@@ -25,7 +25,7 @@ const handleGreeting = async (m, gss) => {
               contextInfo: {
                 mentionedJid: [m.sender],
                 forwardingScore: 9999,
-                isForwarded: true,
+                isForwarded: false,
               },
             });
           }
@@ -40,7 +40,7 @@ const handleGreeting = async (m, gss) => {
               contextInfo: {
                 mentionedJid: [m.sender],
                 forwardingScore: 9999,
-                isForwarded: true,
+                isForwarded: false,
               },
             });
           }
