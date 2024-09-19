@@ -26,13 +26,14 @@ const alive = async (m, Matrix) => {
     image.print(font, x, y, timeString, width, Jimp.HORIZONTAL_ALIGN_CENTER | Jimp.VERTICAL_ALIGN_MIDDLE);
     const buffer = await image.getBufferAsync(Jimp.MIME_PNG);
     
-    const uptimeMessage = `*🤖 ETHIX-MD Status Overview*
+    const uptimeMessage = `*🤖 THESU-MD Status Overview*
 _________________________________________
 
 *📆 ${days} Day(s)*
 *🕰️ ${hours} Hour(s)*
 *⏳ ${minutes} Minute(s)*
 *⏲️ ${seconds} Second(s)*
+*👨‍💻Developer: 𝐓ʜᴇꜱᴀɴᴅᴜ 𝐌ɪʜɪꜱᴀʀᴀ*
 _________________________________________
 `;
     
@@ -65,7 +66,7 @@ _________________________________________
               text: uptimeMessage
             }),
             footer: proto.Message.InteractiveMessage.Footer.create({
-              text: "© ᴘᴏᴡᴇʀᴅ ʙʏ ᴇᴛʜɪx-ᴍᴅ"
+              text: "© ᴘᴏᴡᴇʀᴅ ʙʏ ᴛʜᴇꜱᴜ-ᴍᴅ"
             }),
             header: proto.Message.InteractiveMessage.Header.create({
               ...(await prepareWAMessageMedia({ image: buffer }, { upload: Matrix.waUploadToServer })),
@@ -83,7 +84,7 @@ _________________________________________
               isForwarded: true,
               forwardedNewsletterMessageInfo: {
                 newsletterJid: '120363249960769123@newsletter',
-                newsletterName: "Ethix-MD",
+                newsletterName: "Thesu-MD",
                 serverMessageId: 143
               }
             }
